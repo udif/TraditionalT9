@@ -106,7 +106,7 @@ android {
 		versionCode computeVersionNumber()
 		versionName computeVersionName()
 	}
-
+/**
 	// http://stackoverflow.com/a/19130098
 	signingConfigs {
 		release {
@@ -129,7 +129,7 @@ android {
 				}
 			}
 		}
-	}
+	} */
 }
 
 task getDictSizes {
@@ -150,6 +150,7 @@ task getDictSizes {
 preBuild.dependsOn getDictSizes
 preBuild.mustRunAfter getDictSizes
 
+/**
 // https://www.timroes.de/2014/01/19/using-password-prompts-with-gradle-build-files/
 def getPass(String msg) {
 	def pass = ''
@@ -190,3 +191,4 @@ gradle.taskGraph.whenReady { taskGraph ->
 		android.signingConfigs.release.keyPassword = getPass("Please enter Key passphrase:")
 	} // end if has task
 } // end whenReady
+*/
