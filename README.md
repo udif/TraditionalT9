@@ -4,5 +4,5 @@ This is a Input Method Editor for Android that implements predictive text using 
 
 See Wiki for more information: [Traditional T9 keypad IME for Android](https://github.com/Clam-/TraditionalT9/wiki/Traditional-T9-keypad-IME-for-Android)
 
-Available on Google Play: [Traditional T9 Keypad IME](https://play.google.com/store/apps/details?id=org.nyanya.android.traditionalt9)
+Available on Google Play: [Traditional T9 Keypad IME](https://play.google.com/store/apps/details?id=com.udifink.traditionalt9)
 

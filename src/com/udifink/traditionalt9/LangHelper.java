@@ -1,4 +1,4 @@
-package org.nyanya.android.traditionalt9;
+package com.udifink.traditionalt9;
 
 import java.util.HashMap;
 import java.util.Locale;

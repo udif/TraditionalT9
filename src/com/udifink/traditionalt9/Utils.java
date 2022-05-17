@@ -1,4 +1,4 @@
-package org.nyanya.android.traditionalt9;
+package com.udifink.traditionalt9;
 
 import android.text.InputType;
 import android.util.Log;

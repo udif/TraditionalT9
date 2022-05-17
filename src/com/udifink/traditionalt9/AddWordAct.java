@@ -1,4 +1,4 @@
-package org.nyanya.android.traditionalt9;
+package com.udifink.traditionalt9;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -10,7 +10,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 
-import org.nyanya.android.traditionalt9.T9DB.DBSettings.SETTING;
+import com.udifink.traditionalt9.T9DB.DBSettings.SETTING;
 
 public class AddWordAct extends Activity {
 
@@ -24,9 +24,9 @@ public class AddWordAct extends Activity {
 		View v = getLayoutInflater().inflate(R.layout.addwordview, null);
 		EditText et = (EditText) v.findViewById(R.id.add_word_text);
 		Intent i = getIntent();
-		origword = i.getStringExtra("org.nyanya.android.traditionalt9.word");
+		origword = i.getStringExtra("com.udifink.traditionalt9.word");
 
-		lang = i.getIntExtra("org.nyanya.android.traditionalt9.lang", -1);
+		lang = i.getIntExtra("com.udifink.traditionalt9.lang", -1);
 		if (lang == -1) {
 			Log.e("AddWordAct.onCreate", "lang is invalid. How?");
 		}

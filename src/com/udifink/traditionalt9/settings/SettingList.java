@@ -1,13 +1,13 @@
-package org.nyanya.android.traditionalt9.settings;
+package com.udifink.traditionalt9.settings;
 
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.util.AttributeSet;
 
-import org.nyanya.android.traditionalt9.R;
-import org.nyanya.android.traditionalt9.T9DB;
-import org.nyanya.android.traditionalt9.T9DB.DBSettings.SETTING;
+import com.udifink.traditionalt9.R;
+import com.udifink.traditionalt9.T9DB;
+import com.udifink.traditionalt9.T9DB.DBSettings.SETTING;
 
 public class SettingList extends Setting {
 	String[] entries;

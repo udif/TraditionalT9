@@ -1,8 +1,8 @@
-package org.nyanya.android.traditionalt9;
+package com.udifink.traditionalt9;
 
 import android.util.Log;
 
-import org.nyanya.android.traditionalt9.LangHelper.LANGUAGE;
+import com.udifink.traditionalt9.LangHelper.LANGUAGE;
 
 import java.util.AbstractList;
 import java.util.ArrayList;

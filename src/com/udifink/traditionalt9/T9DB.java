@@ -1,4 +1,4 @@
-package org.nyanya.android.traditionalt9;
+package com.udifink.traditionalt9;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -14,7 +14,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
 
-import org.nyanya.android.traditionalt9.LangHelper.LANGUAGE;
+import com.udifink.traditionalt9.LangHelper.LANGUAGE;
 
 import java.util.AbstractList;
 import java.util.HashMap;

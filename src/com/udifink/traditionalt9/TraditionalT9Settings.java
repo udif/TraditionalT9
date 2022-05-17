@@ -1,4 +1,4 @@
-package org.nyanya.android.traditionalt9;
+package com.udifink.traditionalt9;
 
 /*
 	Source for English dictionary: http://wordlist.sourceforge.net/
@@ -33,11 +33,11 @@ import android.widget.Toast;
 
 import com.stackoverflow.answer.UnicodeBOMInputStream;
 
-import org.nyanya.android.traditionalt9.LangHelper.LANGUAGE;
-import org.nyanya.android.traditionalt9.T9DB.DBSettings.SETTING;
-import org.nyanya.android.traditionalt9.settings.CustomInflater;
-import org.nyanya.android.traditionalt9.settings.Setting;
-import org.nyanya.android.traditionalt9.settings.SettingAdapter;
+import com.udifink.traditionalt9.LangHelper.LANGUAGE;
+import com.udifink.traditionalt9.T9DB.DBSettings.SETTING;
+import com.udifink.traditionalt9.settings.CustomInflater;
+import com.udifink.traditionalt9.settings.Setting;
+import com.udifink.traditionalt9.settings.SettingAdapter;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
