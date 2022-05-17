@@ -73,9 +73,9 @@ def saveProps(Properties props) {
 def computeVersionNumber = { ->
 	Properties props = getProps()
 	int verNum = Integer.valueOf(props.getProperty("verNum", "0"))
-	if (project.hasProperty('incrementBuildNumber')) {
+	//if (project.hasProperty('incrementBuildNumber')) {
 		verNum++
-	}
+	//}
 	props.setProperty("verNum", String.valueOf(verNum))
 	saveProps(props)
 	return verNum
