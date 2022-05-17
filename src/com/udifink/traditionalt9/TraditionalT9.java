@@ -1,11 +1,13 @@
 package org.nyanya.android.traditionalt9;
 
 import android.content.Intent;
+import android.content.Context;
 import android.content.res.Resources;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.KeyboardView;
 import android.os.Handler;
 import android.os.SystemClock;
+import android.os.IBinder;
 import android.text.InputType;
 import android.text.TextUtils;
 import android.util.Log;
@@ -14,6 +16,8 @@ import android.view.View;
 import android.view.inputmethod.CompletionInfo;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
+import android.view.inputmethod.InputMethodInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
 import org.nyanya.android.traditionalt9.LangHelper.LANGUAGE;
@@ -75,6 +79,9 @@ public class TraditionalT9 extends InputMethodService implements
 
 	private final static int T9DELAY = 900;
 	final Handler t9releasehandler = new Handler();
+
+	InputMethodManager imm;
+
 	Runnable mt9release = new Runnable() {
 		@Override
 		public void run() {
@@ -93,6 +100,20 @@ public class TraditionalT9 extends InputMethodService implements
 	private InputConnection currentInputConnection = null;
 
 	private Toast modeNotification = null;
+
+	// method checking if the Google voice input is installed and returning its Id
+	private String voiceExists(InputMethodManager imeManager) {
+		List<InputMethodInfo> list = imeManager.getInputMethodList();
+		for (InputMethodInfo el : list) {
+			// return the id of the Google voice input input method
+			// in this case "com.google.android.googlequicksearchbox"
+			String id = el.getId();
+			if (id.contains("com.google.android.voicesearch")) {
+				return id;
+			}
+		}
+		return null;
+	}
 
 	/**
 	 * Main initialization of the input method component. Be sure to call to
@@ -133,6 +154,7 @@ public class TraditionalT9 extends InputMethodService implements
 	 */
 	@Override
 	public View onCreateInputView() {
+		imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 		//updateKeyMode();
 		View v = getLayoutInflater().inflate(R.layout.mainview, null);
 		interfacehandler.changeView(v);
@@ -639,7 +661,15 @@ public class TraditionalT9 extends InputMethodService implements
 
 		// Log.d("onLongPress", "LONG PRESS: " + keyCode);
 		// HANDLE SPECIAL KEYS
-		if (keyCode == KeyEvent.KEYCODE_POUND) {
+		if (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) {
+			// Start voice input
+			// check if the  Google voice input exist first
+			String voiceExists = voiceExists(imm);
+			if (voiceExists != null) {
+				final IBinder token = getWindow().getWindow().getAttributes().token;
+				imm.setInputMethod(token, voiceExists);
+			}
+		} else if (keyCode == KeyEvent.KEYCODE_POUND) {
 			commitReset();
 			// do default action or insert new line
 			if (!sendDefaultEditorAction(true)) {
