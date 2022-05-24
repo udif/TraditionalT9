@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Traditional T9</string>
+    <string name="app_name">My T9</string>
     <string name="ime_name">מקלדת T9</string>
     <string name="ime_number">מספרים</string>
     <string name="pref_inputmode">מצב קלט ברירת מחדל</string>

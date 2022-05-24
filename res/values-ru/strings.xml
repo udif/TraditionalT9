@@ -6,7 +6,7 @@
     <string name="add_word_blank">Невозможно добавить слово.</string>
     <string name="add_word_exist1">Слово (%1$s) уже есть в словаре.</string>
     <string name="add_word_exist2">Слово (%1$s) уже есть в словаре %2$s.</string>
-    <string name="app_name">Traditional T9</string>
+    <string name="app_name">My T9</string>
     <string name="hello_world">Hello world!</string>
     <string name="ime_name">Клавиатура T9</string>
     <string name="ime_number">Цифры</string>
@@ -64,6 +64,6 @@
 	<string name="pref_reloadKeys">Force reload of key overrides</string>
 
     <string name="title_activity_add_word">Добавить слово</string>
-    <string name="myt9_settings">Traditional T9 настройки</string>
+    <string name="myt9_settings">My T9 настройки</string>
 
 </resources>

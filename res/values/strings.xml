@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 	<string translatable="false" name="help_url">https://github.com/Clam-/MyT9/wiki/Traditional-T9-keypad-IME-for-Android</string>
-	<string name="app_name">Traditional T9</string>
-	<string name="ime_name">Traditional T9</string>
+	<string name="app_name">My T9</string>
+	<string name="ime_name">My T9</string>
 	<string name="ime_number">Numbers</string>
 	<string name="pref_inputmode">Default Input Mode</string>
 	<string name="pref_inputmode_desc">Default mode used for \'normal\' text entry</string>
-	<string name="myt9_settings">Traditional T9 Settings</string>
+	<string name="myt9_settings">My T9 Settings</string>
 	<string name="main_left_insert">Insert symbol</string>
 	<string name="main_left_addword">Add word</string>
 	<string name="main_mid">Done</string>

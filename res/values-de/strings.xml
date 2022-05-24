@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">Traditional T9</string>
-	<string name="ime_name">Traditional T9</string>
+	<string name="app_name">My T9</string>
+	<string name="ime_name">My T9</string>
 	<string name="ime_number">Zahlen</string>
 	<string name="pref_inputmode">Standard Eingabemodus</string>
 	<string name="pref_inputmode_desc">Standardmodus für \'normale\' Texteingabe</string>
-	<string name="myt9_settings">Traditional T9 Einstellungen</string>
+	<string name="myt9_settings">My T9 Einstellungen</string>
 	<string name="main_left_insert">Symbole</string>
 	<string name="main_left_addword">Wort hinzu</string>
 	<string name="main_mid">Fertig</string>
