@@ -1,4 +1,4 @@
-package com.udifink.traditionalt9;
+package com.udifink.myt9;
 
 import android.view.KeyEvent;
 import android.view.View;
@@ -9,10 +9,10 @@ import android.widget.ViewSwitcher;
 public class InterfaceHandler implements View.OnClickListener, View.OnLongClickListener {
 
 	private static final int[] buttons = { R.id.main_left, R.id.main_right, R.id.main_mid };
-	private TraditionalT9 parent;
+	private MyT9 parent;
 	private View mainview;
 
-	public InterfaceHandler(View mainview, TraditionalT9 iparent) {
+	public InterfaceHandler(View mainview, MyT9 iparent) {
 		this.parent = iparent;
 		changeView(mainview);
 	}

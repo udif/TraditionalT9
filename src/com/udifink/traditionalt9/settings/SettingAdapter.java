@@ -1,4 +1,4 @@
-package com.udifink.traditionalt9.settings;
+package com.udifink.myt9.settings;
 
 // https://github.com/codepath/android_guides/wiki/Using-an-ArrayAdapter-with-ListView
 
@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.udifink.traditionalt9.R;
+import com.udifink.myt9.R;
 
 import java.util.ArrayList;
 

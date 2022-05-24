@@ -1,10 +1,10 @@
-package com.udifink.traditionalt9.settings;
+package com.udifink.myt9.settings;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.udifink.traditionalt9.R;
+import com.udifink.myt9.R;
 
 public class Setting {
 	String title;

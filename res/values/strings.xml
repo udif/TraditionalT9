@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-	<string translatable="false" name="help_url">https://github.com/Clam-/TraditionalT9/wiki/Traditional-T9-keypad-IME-for-Android</string>
+	<string translatable="false" name="help_url">https://github.com/Clam-/MyT9/wiki/Traditional-T9-keypad-IME-for-Android</string>
 	<string name="app_name">Traditional T9</string>
 	<string name="ime_name">Traditional T9</string>
 	<string name="ime_number">Numbers</string>
 	<string name="pref_inputmode">Default Input Mode</string>
 	<string name="pref_inputmode_desc">Default mode used for \'normal\' text entry</string>
-	<string name="traditionalt9_settings">Traditional T9 Settings</string>
+	<string name="myt9_settings">Traditional T9 Settings</string>
 	<string name="main_left_insert">Insert symbol</string>
 	<string name="main_left_addword">Add word</string>
 	<string name="main_mid">Done</string>
@@ -41,7 +41,7 @@
 	<string name="pref_help">"Show help</string>
 	<string name="pref_loaddict">Load dictionary</string>
 	<string name="pref_loaduserdict">Load user dictionary</string>
-	<string translatable="false" name="pref_loaduserdictdesc">SDcard/traditionalt9/user.lang.dict (lang: en/ru/de/fr/it/uk/he)</string>
+	<string translatable="false" name="pref_loaduserdictdesc">SDcard/myt9/user.lang.dict (lang: en/ru/de/fr/it/uk/he)</string>
 	<string name="pref_nukedict">Nuke dictionary</string>
 	<string name="pref_backupdict">Backup dictionary</string>
 	<string name="pref_restoredict">Restore dictionary</string>

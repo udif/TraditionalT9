@@ -1,4 +1,4 @@
-package com.udifink.traditionalt9;
+package com.udifink.myt9;
 
 /*
 	Source for English dictionary: http://wordlist.sourceforge.net/
@@ -33,11 +33,11 @@ import android.widget.Toast;
 
 import com.stackoverflow.answer.UnicodeBOMInputStream;
 
-import com.udifink.traditionalt9.LangHelper.LANGUAGE;
-import com.udifink.traditionalt9.T9DB.DBSettings.SETTING;
-import com.udifink.traditionalt9.settings.CustomInflater;
-import com.udifink.traditionalt9.settings.Setting;
-import com.udifink.traditionalt9.settings.SettingAdapter;
+import com.udifink.myt9.LangHelper.LANGUAGE;
+import com.udifink.myt9.T9DB.DBSettings.SETTING;
+import com.udifink.myt9.settings.CustomInflater;
+import com.udifink.myt9.settings.Setting;
+import com.udifink.myt9.settings.SettingAdapter;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -60,14 +60,14 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Properties;
 
-public class TraditionalT9Settings extends ListActivity implements
+public class MyT9Settings extends ListActivity implements
 		DialogInterface.OnCancelListener {
 
 	AsyncTask<String, Integer, Reply> task = null;
 	final static String dictname = "%s-utf8.txt";
 	final static String userdictname = "user.%s.dict";
 	final static String backupname = "t9backup.txt";
-	final static String sddir = "traditionalt9";
+	final static String sddir = "myt9";
 
 	final int BACKUP_Q_LIMIT = 1000;
 
@@ -162,9 +162,9 @@ public class TraditionalT9Settings extends ListActivity implements
 			}
 			mSupportedLanguages = supportedLanguages;
 
-			pd = new ProgressDialog(TraditionalT9Settings.this);
+			pd = new ProgressDialog(MyT9Settings.this);
 			pd.setMessage(getResources().getString(msgid));
-			pd.setOnCancelListener(TraditionalT9Settings.this);
+			pd.setOnCancelListener(MyT9Settings.this);
 		}
 
 		private long getDictSizes(boolean internal, boolean restore, String[] dicts) {
@@ -509,9 +509,9 @@ public class TraditionalT9Settings extends ListActivity implements
 		ProgressDialog pd;
 
 		DumpDictTask(int msgid) {
-			pd = new ProgressDialog(TraditionalT9Settings.this);
+			pd = new ProgressDialog(MyT9Settings.this);
 			pd.setMessage(getResources().getString(msgid));
-			pd.setOnCancelListener(TraditionalT9Settings.this);
+			pd.setOnCancelListener(MyT9Settings.this);
 		}
 
 		@Override protected void onPreExecute() {
@@ -643,7 +643,7 @@ public class TraditionalT9Settings extends ListActivity implements
 		ProgressDialog pd;
 
 		NukeDictTask(int msgid) {
-			pd = new ProgressDialog(TraditionalT9Settings.this);
+			pd = new ProgressDialog(MyT9Settings.this);
 			pd.setMessage(getResources().getString(msgid));
 			pd.setCancelable(false);
 			pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
@@ -761,11 +761,11 @@ public class TraditionalT9Settings extends ListActivity implements
 						task = new NukeDictTask(R.string.pref_nukingdict);
 						task.execute();
 						// restart settings to get fresh settings.
-						TraditionalT9Settings.this.finish();
+						MyT9Settings.this.finish();
 						new Handler().postDelayed(new Runnable() {
 							@Override
 							public void run() {
-								startActivity(new Intent(TraditionalT9Settings.this, TraditionalT9Settings.class));
+								startActivity(new Intent(MyT9Settings.this, MyT9Settings.class));
 							}}, 1000);
 					}
 				}).setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {

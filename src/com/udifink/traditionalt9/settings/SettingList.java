@@ -1,13 +1,13 @@
-package com.udifink.traditionalt9.settings;
+package com.udifink.myt9.settings;
 
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.util.AttributeSet;
 
-import com.udifink.traditionalt9.R;
-import com.udifink.traditionalt9.T9DB;
-import com.udifink.traditionalt9.T9DB.DBSettings.SETTING;
+import com.udifink.myt9.R;
+import com.udifink.myt9.T9DB;
+import com.udifink.myt9.T9DB.DBSettings.SETTING;
 
 public class SettingList extends Setting {
 	String[] entries;

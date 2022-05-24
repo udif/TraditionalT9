@@ -5,7 +5,7 @@
     <string name="ime_number">מספרים</string>
     <string name="pref_inputmode">מצב קלט ברירת מחדל</string>
     <string name="pref_inputmode_desc">"מצב ברירת מחדל המשמש להזנת טקסט 'רגילה'"</string>
-    <string name="traditionalt9_settings">הגדרות T9 מסורתיות</string>
+    <string name="myt9_settings">הגדרות T9 מסורתיות</string>
     <string name="main_left_insert">הכנס סמל</string>
     <string name="main_left_addword">הוסף מילה</string>
     <string name="main_mid">בוצע</string>

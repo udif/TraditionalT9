@@ -1,4 +1,4 @@
-package com.udifink.traditionalt9;
+package com.udifink.myt9;
 
 import android.content.Intent;
 import android.content.Context;
@@ -20,14 +20,14 @@ import android.view.inputmethod.InputMethodInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
-import com.udifink.traditionalt9.LangHelper.LANGUAGE;
-import com.udifink.traditionalt9.T9DB.DBSettings.SETTING;
+import com.udifink.myt9.LangHelper.LANGUAGE;
+import com.udifink.myt9.T9DB.DBSettings.SETTING;
 
 import java.util.AbstractList;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TraditionalT9 extends InputMethodService implements
+public class MyT9 extends InputMethodService implements
 		KeyboardView.OnKeyboardActionListener {
 
 	private CandidateView mCandidateView;
@@ -235,8 +235,8 @@ public class TraditionalT9 extends InputMethodService implements
 			Intent awintent = new Intent(this, AddWordAct.class);
 			awintent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 			awintent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
-			awintent.putExtra("com.udifink.traditionalt9.word", template);
-			awintent.putExtra("com.udifink.traditionalt9.lang", mLang.id);
+			awintent.putExtra("com.udifink.myt9.word", template);
+			awintent.putExtra("com.udifink.myt9.lang", mLang.id);
 			clearState();
 			currentInputConnection.setComposingText("", 0);
 			currentInputConnection.finishComposingText();
@@ -398,7 +398,7 @@ public class TraditionalT9 extends InputMethodService implements
 		}
 		String prevword = null;
 		if (attribute.privateImeOptions != null
-				&& attribute.privateImeOptions.equals("com.udifink.traditionalt9.addword=true")) {
+				&& attribute.privateImeOptions.equals("com.udifink.myt9.addword=true")) {
 			mAddingWord = true;
 			// mAddingSkipInput = true;
 			// Log.d("onStartInput", "ADDING WORD");
@@ -642,7 +642,7 @@ public class TraditionalT9 extends InputMethodService implements
 	}
 
 	protected void launchOptions() {
-		Intent awintent = new Intent(this, TraditionalT9Settings.class);
+		Intent awintent = new Intent(this, MyT9Settings.class);
 		awintent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		awintent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
 		if (interfacehandler != null) {

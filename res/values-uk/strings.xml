@@ -64,6 +64,6 @@
   <string name="pref_reloadKeys">Перезавантажити значення клавіш</string>
 
     <string name="title_activity_add_word">Додати слово</string>
-    <string name="traditionalt9_settings">Налаштування Traditional T9</string>
+    <string name="myt9_settings">Налаштування Traditional T9</string>
 
 </resources>

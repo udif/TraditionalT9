@@ -1,4 +1,4 @@
-package com.udifink.traditionalt9;
+package com.udifink.myt9;
 
 import android.os.Environment;
 import android.util.Log;
@@ -26,13 +26,13 @@ public class KeyMap {
 		if (Environment.MEDIA_MOUNTED_READ_ONLY.equals(Environment.getExternalStorageState())
 				|| Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
 			// check for file
-			if ((new File(new File(Environment.getExternalStorageDirectory(), TraditionalT9Settings.sddir),
+			if ((new File(new File(Environment.getExternalStorageDirectory(), MyT9Settings.sddir),
 					keymapfname)).exists()) {
 				BufferedReader br = null;
 				Log.d("T9.KeyMap", "Attemping to load keys");
 				try {
 					br = new BufferedReader(new FileReader(new File(
-							new File(Environment.getExternalStorageDirectory(), TraditionalT9Settings.sddir), keymapfname)));
+							new File(Environment.getExternalStorageDirectory(), MyT9Settings.sddir), keymapfname)));
 					String line;
 					try {
 						while ((line = br.readLine()) != null) {

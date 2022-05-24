@@ -1,13 +1,13 @@
-package com.udifink.traditionalt9.settings;
+package com.udifink.myt9.settings;
 
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.CheckBox;
 
-import com.udifink.traditionalt9.R;
-import com.udifink.traditionalt9.T9DB;
-import com.udifink.traditionalt9.T9DB.DBSettings.SETTING;
+import com.udifink.myt9.R;
+import com.udifink.myt9.T9DB;
+import com.udifink.myt9.T9DB.DBSettings.SETTING;
 
 public class SettingCheck extends Setting {
 	boolean value;
